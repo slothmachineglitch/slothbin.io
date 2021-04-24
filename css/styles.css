@@ -1,0 +1,140 @@
+:root {
+    --background: #f8e1bd;
+    --heading-background: #e0f8db;
+    --span-background: #ffc18e;
+    --light-gray: #d6d6d6;
+    --paragraph-background: #dceaff;
+
+    --input-border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: var(--background);
+
+    font-family: sans-serif;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 4px solid var(--light-gray);
+    padding: 10px;
+
+    text-align: center;
+}
+
+@font-face {
+    font-family: "montserrat_alternatesblack";
+    src: url("montserrat_alternates-black-webfont.woff2") format("woff2"), url("montserrat_alternates-black-webfont.woff") format("woff");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+    text-align: left;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+/*Header 1,2,3 styling*/
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    /*text-decoration: ;*/
+    background-color: var(--heading-background);
+    /*color: #000000;*/
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--heading-background);
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: ;
+    background-color: var(--heading-background);
+}
+
+p {
+    background-color: var(--paragraph-background);
+    text-align: justify;
+}
+
+span {
+    background-color: var(--span-background);
+}
+
+/*Creates small radius around images*/
+img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+a {
+    color: #147266;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #05676e;
+}
+
+a:hover,
+a:focus {
+    text-decoration: overline;
+}
+
+a:active {
+    color: #489c79;
+}
+
+span {
+    color: #000;
+}
+
+input,
+select,
+button {
+    font-family: system ui;
+}
+
+button {
+    /*Overwrites browser defaults and resets the border*/
+    border: none;
+    /*Takes the font from the outer container*/
+    font-family: inherit;
+    /*styles the background color, font color, and text decoration of the button*/
+    background-color: #357b70;
+    color: white;
+    text-decoration: none;
+    /*Adds spacing to the button border with a width of 2px, a type of solid and a color in RGBA format*/
+    padding: 10px;
+    border-radius: 3px;
+
+    /*Gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA  format*/
+    border-bottom: var(--input-border);
+}
+
+button:hover,
+button:focus {
+    /*Lets the mouse appear as a hand when hovering over the button*/
+    cursor: pointer;
+    /*Reduces the opacity of the button to 80%*/
+    opacity: 0.6;
+}
+
+.button_secondary {
+    background-color: #e0b354;
+    color: #2b2b2b;
+}
+
+.navigation-list_item--active {
+    text-decoration: none;
+}
